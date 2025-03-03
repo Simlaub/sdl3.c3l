@@ -22,7 +22,7 @@ module main;
 import sdl3;
 import sdl3::event_type;
 import sdl3::subsystem;
-import sdl3::windows_flags;
+import sdl3::window_flags;
 
 fn int main(String[] args)
 {
@@ -35,7 +35,7 @@ fn int main(String[] args)
 
     sdl3::Window* window = sdl3::create_window(
         "An SDL3 window", 640, 480,
-        windows_flags::HIDDEN
+        window_flags::HIDDEN
     );
     sdl3::Renderer* renderer = sdl3::create_renderer(window, null);
     sdl3::show_window(window);
