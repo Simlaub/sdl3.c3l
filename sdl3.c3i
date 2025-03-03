@@ -3935,7 +3935,7 @@ fn EGLSurface egl_get_window_surface(Window* window) @extern("SDL_EGL_GetWindowS
 fn void egl_set_attribute_callbacks(EGLAttribArrayCallback platformAttribCallback, EGLIntArrayCallback surfaceAttribCallback, EGLIntArrayCallback contextAttribCallback) @extern("SDL_EGL_SetAttributeCallbacks");
 
 
-module sdl3::windows_flags;
+module sdl3::window_flags;
 
 const WindowFlags FULLSCREEN           =  0x0000000000000001;
 const WindowFlags OPENGL               =  0x0000000000000002;
